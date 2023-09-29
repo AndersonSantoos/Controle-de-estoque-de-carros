@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Venda de Carros</title>
+</head>
+<body>
+    <div class="container">
+        
+        
+        <!-- Página de Login -->
+        <div id="loginPage" class="login">
+            <h2>Faça login</h2>
+            <input type="text" id="username" placeholder="Usuário">
+            <input type="password" id="password" placeholder="Senha">
+            <button id="loginBtn" class="login-button">Entrar</button>
+        </div>
+        
+        <!-- Página Principal após o Login -->
+        <div id="mainPage" class="hidden">
+            <h2>Estoque de carros</h2>
+            <ul id="carList"></ul>
+            <h2>Modificar o estoque</h2>
+            <button id="addCarBtn">Adicionar Carro</button>
+            <button id="editCarBtn">Editar Carro</button>
+            <button id="deleteCarBtn">Excluir Carro</button>
+            <button id="logoutBtn">Sair</button>
+        </div>
+        
+        <!-- Página de Compra -->
+        <div id="purchasePage" class="hidden">
+            <p>Parabéns! Você comprou o carro <span id="selectedCarName"></span>.</p>
+            <button id="backToMainBtn">Voltar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
